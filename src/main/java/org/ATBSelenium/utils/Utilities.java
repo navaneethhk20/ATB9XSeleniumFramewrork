@@ -1,4 +1,4 @@
-package org.ATBSelenium.Utils;
+package org.ATBSelenium.utils;
 
 public class Utilities {
 }
