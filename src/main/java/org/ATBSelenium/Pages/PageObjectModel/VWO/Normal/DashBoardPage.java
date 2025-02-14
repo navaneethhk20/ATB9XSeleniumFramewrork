@@ -1,4 +1,4 @@
-package org.ATBSelenium.Pages.PageObjectModel.VWO;
+package org.ATBSelenium.Pages.PageObjectModel.VWO.Normal;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;

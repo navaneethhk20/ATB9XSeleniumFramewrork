@@ -1,4 +1,4 @@
-package org.ATBSelenium.tests;
+package org.ATBSelenium.tests.VWO;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;

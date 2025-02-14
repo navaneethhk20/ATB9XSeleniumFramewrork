@@ -3,7 +3,7 @@
 <suite name="All Test Suite">
     <test verbose="2" preserve-order="true" name="C:/Users/Navaneeth H K/IdeaProjects/ATB9XSeleniumFramewrork">
         <classes>
-            <class name="org.ATBSelenium.tests.VWOLogin">
+            <class name="org.ATBSelenium.tests.VWO.VWOLogin">
             </class>
         </classes>
     </test>

@@ -4,8 +4,8 @@ import io.qameta.allure.Description;
 import io.qameta.allure.Owner;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.edge.EdgeDriver;
-import org.ATBSelenium.Pages.PageObjectModel.VWO.DashBoardPage;
-import org.ATBSelenium.Pages.PageObjectModel.VWO.LoginPage;
+import org.ATBSelenium.Pages.PageObjectModel.VWO.Normal.DashBoardPage;
+import org.ATBSelenium.Pages.PageObjectModel.VWO.Normal.LoginPage;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
