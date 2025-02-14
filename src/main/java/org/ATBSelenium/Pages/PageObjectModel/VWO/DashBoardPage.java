@@ -5,9 +5,11 @@ import org.openqa.selenium.WebDriver;
 
 public class DashBoardPage {
     WebDriver driver;
-    public LoginPage(WebDriver driver){
+
+    public DashBoardPage(WebDriver driver) {
         this.driver = driver;
     }
+
     By userNameOnDashboard = By.cssSelector("[data-qa='lufexuloga']");
 
     public String loggedInUserName(){

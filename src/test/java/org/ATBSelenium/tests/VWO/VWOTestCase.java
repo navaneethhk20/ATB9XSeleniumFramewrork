@@ -1,4 +1,4 @@
-package org.ATBSelenium.tests;
+package org.ATBSelenium.tests.VWO;
 
 import io.qameta.allure.Description;
 import io.qameta.allure.Owner;
@@ -6,8 +6,6 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.ATBSelenium.Pages.PageObjectModel.VWO.DashBoardPage;
 import org.ATBSelenium.Pages.PageObjectModel.VWO.LoginPage;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.edge.EdgeDriver;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -17,7 +15,7 @@ public class VWOTestCase {
     @Owner("Navaneeth")
     @Description("Verify Negative test case")
     @Test
-    public void testLoginPositiveVWO(){
+    public void testLoginNegativeVWO(){
         WebDriver driver = new EdgeDriver();
         LoginPage loginPageVWO = new LoginPage(driver);
         String error_messege = loginPageVWO.loginToVWOLoginInvalidCreds("admin@gmail.com", "123");
@@ -31,7 +29,7 @@ public class VWOTestCase {
     public void testLoginPositiveVWO(){
         WebDriver driver = new EdgeDriver();
         LoginPage loginPageVWO = new LoginPage(driver);
-        String error_messege = loginPageVWO.loginTOVWOLoginValidCreds("contact+aug@thetestingacademy.com","TtxkgQ!s$rJBk85");
+        String error_messege = loginPageVWO.loginToVWOLoginValidCreds("contact+aug@thetestingacademy.com","TtxkgQ!s$rJBk85");
 
         DashBoardPage dashBoardPage  = new DashBoardPage(driver);
         String usernameLoggedIn = dashBoardPage.loggedInUserName();

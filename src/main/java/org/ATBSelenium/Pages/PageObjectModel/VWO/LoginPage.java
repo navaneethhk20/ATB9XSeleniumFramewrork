@@ -11,14 +11,14 @@ public class LoginPage {
     }
     private By username = By.id("login-username");
     private By password = By.id("login-password");
-    private By Signbutton = By.id("js-login-btn");
-    private By error_messege = By.id("js-notification-box-messege");
+    private By signbutton = By.id("js-login-btn");
+    private By error_messege = By.xpath("//div[@data-qa='tozemoxine']");
 
-    public static loginToVWOLoginInvalidCreds(String user, String pwd){
+    public String loginToVWOLoginInvalidCreds(String user, String pwd){
         driver.get("https://app.vwo.com/");
         driver.findElement(username).sendKeys(user);
-        driver.findElement(passwprd).sendKeys(pwd);
-        driver.findElement(signButton).click();
+        driver.findElement(password).sendKeys(pwd);
+        driver.findElement(signbutton).click();
         try{
             Thread.sleep(3000);
         } catch (InterruptedException e) {
@@ -29,19 +29,19 @@ public class LoginPage {
         return error_messege_text;
     }
 
-    public static loginToVWOLoginValidCreds(String user, String pwd){
+    public String loginToVWOLoginValidCreds(String user, String pwd) {
         driver.get("https://app.vwo.com/");
         driver.findElement(username).sendKeys(user);
-        driver.findElement(passwprd).sendKeys(pwd);
-        driver.findElement(signButton).click();
-        try{
+        driver.findElement(password).sendKeys(pwd);
+        driver.findElement(signbutton).click();
+        try {
             Thread.sleep(3000);
         } catch (InterruptedException e) {
             throw new RuntimeException(e);
         }
+
+        return user;
     }
-
-
 
 
 
