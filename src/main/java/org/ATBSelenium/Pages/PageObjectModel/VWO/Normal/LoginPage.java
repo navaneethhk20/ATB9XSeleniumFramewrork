@@ -7,9 +7,12 @@ import org.openqa.selenium.WebDriver;
 public class LoginPage {
     WebDriver driver;
 
-    public LoginPage(WebDriver driver){
+
+
+    public LoginPage(WebDriver driver) {
         this.driver = driver;
     }
+
     private By username = By.id("login-username");
     private By password = By.id("login-password");
     private By signbutton = By.id("js-login-btn");
@@ -30,7 +33,7 @@ public class LoginPage {
         return error_messege_text;
     }
 
-    public String loginToVWOLoginValidCreds(String user, String pwd) {
+    public void loginToVWOLoginValidCreds(String user, String pwd) {
         driver.get(PropertiesReader.readKey("url"));
         driver.findElement(username).sendKeys(user);
         driver.findElement(password).sendKeys(pwd);
@@ -41,7 +44,7 @@ public class LoginPage {
             throw new RuntimeException(e);
         }
 
-        return user;
+
     }
 
 

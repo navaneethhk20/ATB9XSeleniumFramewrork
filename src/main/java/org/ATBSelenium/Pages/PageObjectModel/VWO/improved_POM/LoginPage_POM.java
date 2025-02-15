@@ -4,12 +4,12 @@ import org.ATBSelenium.base.CommonToAllPage;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
-public class LoginPage extends CommonToAllPage {
+public class LoginPage_POM extends CommonToAllPage {
     // Page Class
     // Page Locators
     WebDriver driver;
 
-    public LoginPage(WebDriver driver){
+    public LoginPage_POM(WebDriver driver){
         this.driver = driver;
     }
 

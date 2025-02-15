@@ -28,8 +28,8 @@ public class VWOTestCase {
     @Test
     public void testLoginPositiveVWO(){
         WebDriver driver = new EdgeDriver();
-        LoginPage loginPageVWO = new LoginPage(driver);
-        String error_messege = loginPageVWO.loginToVWOLoginValidCreds("contact+aug@thetestingacademy.com","TtxkgQ!s$rJBk85");
+        LoginPage loginPage_VWO = new LoginPage(driver);
+        loginPage_VWO.loginToVWOLoginValidCreds("contact+aug@thetestingacademy.com","TtxkgQ!s$rJBk85");
 
         DashBoardPage dashBoardPage  = new DashBoardPage(driver);
         String usernameLoggedIn = dashBoardPage.loggedInUserName();

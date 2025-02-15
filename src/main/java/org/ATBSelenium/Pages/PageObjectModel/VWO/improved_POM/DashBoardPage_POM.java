@@ -4,10 +4,10 @@ import org.ATBSelenium.base.CommonToAllPage;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
-public class DashBoardPage extends CommonToAllPage {
+public class DashBoardPage_POM extends CommonToAllPage {
     WebDriver driver;
 
-    public DashBoardPage(WebDriver driver) {
+    public DashBoardPage_POM(WebDriver driver) {
         this.driver = driver;
     }
 
