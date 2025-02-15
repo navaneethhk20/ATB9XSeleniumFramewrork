@@ -2,6 +2,7 @@ package org.ATBSelenium.tests.VWO;
 
 
 import io.qameta.allure.Description;
+
 import org.ATBSelenium.utils.PropertiesReader;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -13,7 +14,7 @@ import org.testng.annotations.Test;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
-public class VWO_PopertyReader {
+public class VWO_PropertyReader {
     @Description("Verify that with invalid email, pass, error message is shown on the app.vwo.com")
     @Test
     public void test_negative_vwo_login() throws Exception {

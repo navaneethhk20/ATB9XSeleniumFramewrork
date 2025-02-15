@@ -1,5 +1,6 @@
 package org.ATBSelenium.Pages.PageObjectModel.VWO.Normal;
 
+import org.ATBSelenium.utils.PropertiesReader;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
@@ -15,7 +16,7 @@ public class LoginPage {
     private By error_messege = By.xpath("//div[@data-qa='tozemoxine']");
 
     public String loginToVWOLoginInvalidCreds(String user, String pwd){
-        driver.get("https://app.vwo.com/");
+        driver.get(PropertiesReader.readKey("url"));
         driver.findElement(username).sendKeys(user);
         driver.findElement(password).sendKeys(pwd);
         driver.findElement(signbutton).click();
@@ -30,7 +31,7 @@ public class LoginPage {
     }
 
     public String loginToVWOLoginValidCreds(String user, String pwd) {
-        driver.get("https://app.vwo.com/");
+        driver.get(PropertiesReader.readKey("url"));
         driver.findElement(username).sendKeys(user);
         driver.findElement(password).sendKeys(pwd);
         driver.findElement(signbutton).click();
