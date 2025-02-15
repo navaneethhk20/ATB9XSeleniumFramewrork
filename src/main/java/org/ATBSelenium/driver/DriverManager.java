@@ -1,5 +1,6 @@
 package org.ATBSelenium.driver;
 
+
 import org.ATBSelenium.utils.PropertiesReader;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -60,5 +61,6 @@ public class DriverManager {
         }
 
     }
+
 
 }

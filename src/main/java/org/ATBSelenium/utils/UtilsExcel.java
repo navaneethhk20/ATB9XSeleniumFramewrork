@@ -21,7 +21,7 @@ public class UtilsExcel {
     static Workbook book;
     static Sheet sheet;
 
-    public static String SHEET_PATH = System.getProperty("user.dir")+ "/src/test/resources/TestData.xlsx";
+    public static String SHEET_PATH = System.getProperty("C:\\Users\\Navaneeth H K\\IdeaProjects\\ATB9XSeleniumFramewrork\\src\\main\\java\\resources\\TestData.xlsx\\");
 
     public static Object[][] getTestDataFromExcel(String sheetName) throws IOException {
 
