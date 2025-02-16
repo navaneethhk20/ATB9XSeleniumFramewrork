@@ -7,11 +7,11 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class Login_Page_PF extends CommonToAllPage {
+public class LoginPage_PF extends CommonToAllPage {
 
-    // Page Locators
+// Page Locators
 
-    public void LoginPage_PF(WebDriver driver) {
+    public LoginPage_PF(WebDriver driver) {
         PageFactory.initElements(driver, this);
     }
 
