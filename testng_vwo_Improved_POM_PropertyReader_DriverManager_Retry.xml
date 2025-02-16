@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <listeners>
+        <listener class-name="org.ATBSelenium.listeners.RetryListener"/>
+    </listeners>
+    <test verbose="2" preserve-order="true" name="C:/Users/Navaneeth H K/IdeaProjects/ATB9XSeleniumFramewrork">
+        <classes>
+            <class name="org.ATBSelenium.tests.VWO.VWO_Improved_POM_PropertiesReader_Retry_TestCase">
+            </class>
+        </classes>
+    </test>
+</suite>

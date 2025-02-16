@@ -1,7 +1,6 @@
 package org.ATBSelenium.Pages.PageObjectModel.VWO.Improved_POM;
 
 import org.ATBSelenium.base.CommonToAllPage;
-import org.ATBSelenium.utils.PropertiesReader;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
