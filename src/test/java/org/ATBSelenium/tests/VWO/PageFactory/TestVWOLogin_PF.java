@@ -24,6 +24,7 @@ public class TestVWOLogin_PF extends CommonToAllTest {
 
         LoginPage_PF loginPagePf = new LoginPage_PF(driver);
         String error_msg = loginPagePf.loginToVWOInvalidCreds();
+        logger.info("Verifying the Result");
         Assert.assertEquals(error_msg, PropertiesReader.readKey("error_message"));
 
     }
